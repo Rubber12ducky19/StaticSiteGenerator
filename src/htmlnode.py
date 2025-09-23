@@ -7,7 +7,7 @@ class HTMLNode:
         #For example, a link <a> tag might have {"href": "https://www.google.com"}
     
     def to_html(self):
-        raise NotImplemented
+        raise NotImplementedError()
     
     def props_to_html(self):
         if not self.props:

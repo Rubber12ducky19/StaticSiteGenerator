@@ -9,7 +9,10 @@ class test_block_to_blocktype(unittest.TestCase):
           even more code ```"""
         code_expected_result = BlockType.CODE
         print("-'Code':")
+        
         code_result_node = block_to_block_type(code_test_node)
+        #print(f"{code_expected_result}")
+        #print(f"{code_result_node}")
         self.assertEqual(code_expected_result,code_result_node,)
         print("-Passed")
         
